@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestTask</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- My style (style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- First task (Candies) -->
+    <div class="alert alert-info alert_plus">
+         <p id='task1'>Task 1</p>
+         <p id ='res' style="font-weight: bold;"></p>
+        <button type="button" class="btn btn-success btn-sm" style="float: right;" onclick="Input()">Start</button>
+    </div>
+
+    <!-- Second task (Secretary Jimny) -->
+    <div class="alert alert-warning alert_plus">
+        <p id='task2'>Task 2</p>
+        <p id ='resSecond' style="font-weight: bold;"></p>
+       <button type="button" class="btn btn-success btn-sm" style="float: right;" onclick="InputSecond()">Start</button>
+    </div>
+
+    <!-- Third task (QuantiCoders employees) -->
+    <div class="alert alert-success alert_plus">
+        <p>Task 3</p>
+        <button type="button" class="btn btn-success btn-sm" style="float: right;" onclick="input()">Start</button>
+        <div id = "table_div" style="display: none;">
+            <table class="table table-dark" id = "table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">drinks</th>
+                  </tr>
+                </thead>
+                <tbody id = "table_body">
+                    
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <p style="font-style: italic; padding-left:1%;">Note: when task algorithm will finish his work the page will automatically reload, don't worry this need to proper work of program!</p>
+
+    <!-- js files -->
+    <script src="task_3.js" ></script>
+    <script src="task_2.js" ></script>
+    <script src="task_1.js"></script>
+</body>
+</html>
